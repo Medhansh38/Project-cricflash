@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricFlash - World Cup Moments</title>
+        <link rel="icon" href="assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="cricket-ball"></div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <!--<img src="assests/logo.png" alt="Cricket Hub Logo">-->
+            <div class="logo-text">CricFlash</div>
+    
+        </div>
+    
+        <div class="nav-links">
+            <a href="/home.html">ALL</a>
+            <a href="/world_cup/index.html">WORLD CUP</a>
+            <a href="/ipl/index.html" class="active">IPL</a>
+            <a href="/iconic-2-final/index_2.html">ICONIC</a>
+            <a href="/about.html">ABOUT US</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button><i class="search-icon"></i></button>
+            </div>
+            <button class="login-btn" id="login-btn">LOGIN</button>
+        </div>
+    </nav>
+
+    <!-- World Cup Moments Grid -->
+    <main class="ipl-cup-main">
+        <h1 class="section-title">| IPL's Most Electrifying Moments</h1>
+        <div class="moments-grid">
+            <!-- Moment 1 -->
+             <div class="moment-card with-video"
+                onclick="window.open('https://www.hotstar.com/in/sports/cricket/tata-ipl-team-of-the-season/1271424755/watch', '_blank')">
+                <img src="https://assets.bcci.tv/watermarkoutput/bcci/photos/1872/df4229d5-41de-490f-ba28-fb9607910d4b.jpg"
+                    alt="Tata IPL Team of the Season Highlights" />
+                <div class="overlay">
+                    <div class="play-button"></div>
+                </div>
+
+
+                <div class="moment-info">
+                    <h3>RCB wins their first IPL cup after 18 years | 2025</h3>
+                </div>
+            </div>
+            <!-- Moment 2-->
+            <div class="moment-card video-container" data-video-id="Bfvmmyd5YAo">
+                <img class="video-thumbnail" src="ASSETS_IPL/2024.jpg"
+                    data-src="https://img.youtube.com/vi/Bfvmmyd5YAo/hqdefault.jpg" alt="KKR vs SRH IPL 2024 Final">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2024 IPL FINAL | KKR VS SRH</h3>
+                </div>
+            </div> <!-- Moment 3 -->
+
+            <!-- Moment 1 -->
+            <div class="moment-card video-container" data-video-id="sPhDXaJpV9A">
+                <img class="video-thumbnail" src="ASSETS_IPL/2023.jpg"
+                    data-src="https://img.youtube.com/vi/sPhDXaJpV9A/hqdefault.jpg" alt="2023 IPL FINAL | GT VS CSK"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2023 IPL FINAL | GT VS CSK</h3>
+                </div>
+            </div>
+
+            <!-- Moment 2 -->
+            <div class="moment-card video-container" data-video-id="NX99oAlA7dE">
+                <img class="video-thumbnail" src="ASSETS_IPL/2022.jpg"
+                    data-src="https://img.youtube.com/vi/NX99oAlA7dE/hqdefault.jpg" alt="2022 IPL FINAL | GT VS RR"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2022 IPL FINAL | GT VS RR</h3>
+                </div>
+            </div>
+
+            <!-- Moment 3 -->
+            <div class="moment-card video-container" data-video-id="F3Yox-wYzhI">
+                <img class="video-thumbnail" src="ASSETS_IPL/2021.jpg"
+                    data-src="https://img.youtube.com/vi/F3Yox-wYzhI/hqdefault.jpg" alt="2021 IPL FINAL | CSK VS KKR"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2021 IPL FINAL | CSK VS KKR</h3>
+                </div>
+            </div>
+
+            <!-- Moment 4 -->
+            <div class="moment-card video-container" data-video-id="9xp6eeJyEqs">
+                <img class="video-thumbnail" src="ASSETS_IPL/2020.jpg"
+                    data-src="https://img.youtube.com/vi/9xp6eeJyEqs/hqdefault.jpg" alt="2020 IPL FINAL | MI VS DC"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2020 IPL FINAL | MI VS DC</h3>
+                </div>
+            </div>
+
+            <!-- Moment 5 -->
+            <div class="moment-card video-container" data-video-id="I-f8C7vcKsM">
+                <img class="video-thumbnail" src="ASSETS_IPL/2019.jpg"
+                    data-src="https://img.youtube.com/vi/I-f8C7vcKsM/hqdefault.jpg" alt="2019 IPL FINAL | MI VS CSK"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2019 IPL FINAL | MI VS CSK</h3>
+                </div>
+            </div>
+
+            <!-- Moment 6 -->
+            <div class="moment-card video-container" data-video-id="0OfZRSZMiGM">
+                <img class="video-thumbnail" src="ASSETS_IPL/2018.jpg"
+                    data-src="https://img.youtube.com/vi/0OfZRSZMiGM/hqdefault.jpg" alt="2018 IPL FINAL | MI VS RCB"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2018 IPL FINAL | MI VS RCB</h3>
+                </div>
+            </div>
+
+            <!-- Moment 9 -->
+            <div class="moment-card video-container" data-video-id="8r1a5ihk8Uc">
+                <img class="video-thumbnail" src="ASSETS_IPL/2017.jpg"
+                    data-src="https://img.youtube.com/vi/8r1a5ihk8Uc/hqdefault.jpg" alt="2017 IPL FINAL | MI VS RR"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2017 IPL FINAL | MI VS RR</h3>
+                </div>
+            </div>
+
+            <!-- Moment 10 -->
+            <div class="moment-card video-container" data-video-id="gyXfidJDMCo">
+                <img class="video-thumbnail" src="ASSETS_IPL/2016.jpg"
+                    data-src="https://img.youtube.com/vi/gyXfidJDMCo/hqdefault.jpg" alt="2016 IPL FINAL | SRH VS RCB"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2016 IPL FINAL | SRH VS RCB</h3>
+                </div>
+            </div>
+
+            <!-- Moment 11 -->
+            <div class="moment-card video-container" data-video-id="tWST8w6rUWE">
+                <img class="video-thumbnail" src="ASSETS_IPL/2015.jpg"
+                    data-src="https://img.youtube.com/vi/tWST8w6rUWE/hqdefault.jpg" alt="2015 IPL FINAL | KKR VS KXIP"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2015 IPL FINAL | KKR VS KXIP</h3>
+                </div>
+            </div>
+
+            <!-- Moment 12 -->
+            <div class="moment-card video-container" data-video-id="tdC2whKyvas">
+                <img class="video-thumbnail" src="ASSETS_IPL/2014.jpg"
+                    data-src="https://img.youtube.com/vi/tdC2whKyvas/hqdefault.jpg" alt="2014 IPL FINAL | MI VS CSK"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2014 IPL FINAL | MI VS CSK</h3>
+                </div>
+            </div>
+
+            <!-- Moment 14 -->
+            <div class="moment-card video-container" data-video-id="RkqFq80M4lY">
+                <img class="video-thumbnail" src="ASSETS_IPL/2012.jpg"
+                    data-src="https://img.youtube.com/vi/RkqFq80M4lY/hqdefault.jpg" alt="2012 IPL FINAL | KKR VS CSK"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2012 IPL FINAL | KKR VS CSK</h3>
+                </div>
+            </div>
+
+            <!-- Moment 15 -->
+            <div class="moment-card video-container" data-video-id="Qba94tYwCi4">
+                <img class="video-thumbnail" src="ASSETS_IPL/2011.jpg"
+                    data-src="https://img.youtube.com/vi/Qba94tYwCi4/hqdefault.jpg" alt="2011 IPL FINAL | CSK VS RCB"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2011 IPL FINAL | CSK VS RCB</h3>
+                </div>
+            </div>
+
+            <!-- Moment 16 -->
+            <div class="moment-card video-container" data-video-id="lzmECHvTxRs">
+                <img class="video-thumbnail" src="ASSETS_IPL/2010.jpg"
+                    data-src="https://img.youtube.com/vi/lzmECHvTxRs/hqdefault.jpg" alt="2010 IPL FINAL | MI VS CSK"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>2010 IPL FINAL | MI VS CSK</h3>
+                </div>
+            </div>
+
+            <!-- Moment 16 -->
+            <!-- Moment: IPL Double Super Over | MI VS KXIP -->
+            <div class="moment-card video-container" data-video-id="s3TI7683ZJI">
+                <img class="video-thumbnail" src="ASSETS_IPL/DOUBLE_SUPEROVER.jpg"
+                    data-src="https://img.youtube.com/vi/s3TI7683ZJI/hqdefault.jpg"
+                    alt="IPL Double Super Over | MI VS KXIP" loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>IPL Double Super Over | MI VS KXIP</h3>
+                </div>
+            </div>
+
+            <!-- Moment: Chris Gayle's 175runs(66) -->
+            <div class="moment-card video-container" data-video-id="qWfaptZzLxo">
+                <img class="video-thumbnail" src="ASSETS_IPL/175.jpg"
+                    data-src="https://img.youtube.com/vi/qWfaptZzLxo/hqdefault.jpg" alt="Chris Gayle's 175runs(66)"
+                    loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>Chris Gayle's 175runs(66)</h3>
+                </div>
+            </div>
+
+            <!-- Moment: Ravindra Jadeja's 37-run Over | 2021 -->
+            <div class="moment-card video-container" data-video-id="rftnjJM5Ppk">
+                <img class="video-thumbnail" src="ASSETS_IPL/JADEJA.jpg"
+                    data-src="https://img.youtube.com/vi/rftnjJM5Ppk/hqdefault.jpg"
+                    alt="Ravindra Jadeja's 37-run Over | 2021" loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>Ravindra Jadeja's 37-run Over | 2021</h3>
+                </div>
+            </div>
+
+            <!-- Moment: Rahul Tewatia’s Comeback Knock | 2020 -->
+            <div class="moment-card video-container" data-video-id="rxrPneujUfU">
+                <img class="video-thumbnail" src="ASSETS_IPL/5_SIXES.jpg"
+                    data-src="https://img.youtube.com/vi/rxrPneujUfU/hqdefault.jpg"
+                    alt="Rahul Tewatia’s Comeback Knock | 2020" loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>Rahul Tewatia’s Comeback Knock | 2020</h3>
+                </div>
+            </div>
+
+            <!-- Moment: Riyan Parag from Assam hits 6 sixes in IPL 2025 -->
+            <div class="moment-card video-container" data-video-id="XBqQxgf5dXA">
+                <img class="video-thumbnail" src="ASSETS_IPL/6_sixes.jpg"
+                    data-src="https://img.youtube.com/vi/XBqQxgf5dXA/hqdefault.jpg"
+                    alt="Riyan Parag from Assam hits 6 sixes in IPL 2025" loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>Riyan Parag from Assam hits 6 sixes in IPL 2025</h3>
+                </div>
+            </div>
+
+            <!-- Moment: Youngest IPL centurion - Vaibhav Suryavanshi | RR vs GT 2025 -->
+            <div class="moment-card video-container" data-video-id="9fQeY59Ahnw">
+                <img class="video-thumbnail" src="ASSETS_IPL/CENTRURION.jpg"
+                    data-src="https://img.youtube.com/vi/9fQeY59Ahnw/hqdefault.jpg"
+                    alt="Youngest IPL centurion - Vaibhav Suryavanshi | RR vs GT 2025" loading="lazy">
+                <div class="play-button"></div>
+                <div class="moment-info">
+                    <h3>Youngest IPL centurion - Vaibhav Suryavanshi | RR vs GT 2025</h3>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Moment 5 -->
+        <div class="more"><h3>More to be added shortly...</h3></div>
+
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- OUR WEBSITE Section -->
+            <div class="footer-section">
+                <h3 class="footer-heading">OUR WEBSITE</h3>
+                <ul class="footer-links">
+                    <li><a href="/home.html">HOME</a></li>
+                    <li><a href="/world_cup/index.html">WORLD CUP</a></li>
+                    <li><a href="/ipl/index.html">IPL</a></li>
+                    <li><a href="/iconic-2-final/index_2.html">ICONIC </a></li>
+                </ul>
+            </div>
+
+            <!-- FOLLOW US Section -->
+            <div class="footer-section">
+                <h3 class="footer-heading">FOLLOW US</h3>
+                <ul class="footer-links social-links">
+                    <li><a href="https://facebook.com"> Facebook</a></li>
+                    <li><a href="https://twitter.com"> Twitter</a></li>
+                    <li><a href="https://instagram.com"> Instagram</a></li>
+                    <li><a href="https://youtube.com"> YouTube</a></li>
+                    <li><a href="https://pinterest.com">Pinterest</a></li>
+                </ul>
+            </div>
+
+            <!-- COMPANY Section -->
+            <div class="footer-section">
+                <h3 class="footer-heading">COMPANY</h3>
+                <ul class="footer-links">
+                    <li><a href="/help">Help Centre</a></li>
+                    <li><a href="/media">Media Centre</a></li>
+                    <li><a href="/careers">Jobs</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 CricFlash.com, CricFlash Platforms Limited. All rights reserved |
+            The Times of India | Navbharat Times |
+            <strong>CricFlash established 2025</strong>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
