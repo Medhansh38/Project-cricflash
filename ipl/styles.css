@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 body{
- background: linear-gradient(270deg, #1a237e, #00897b, #fb8c00, #e53935);
+ background: linear-gradient(to right, #1b1931 1%,  #44174e 18%, #662249 40%,  #a34054 60%, #d4a017 82%,  #f5e6a6 100%);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+}
+ /* animation: gradientBG 15s ease infinite;
 }
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
+}*/
   .preloader {
             position: fixed;
             top: 0;
@@ -28,15 +29,23 @@ body{
             transition: opacity 0.5s ease;
         }
 
-        .cricket-ball {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(145deg, #d4af37, #a67c00);
-            border-radius: 50%;
-            position: relative;
-            animation: spin 1.5s linear infinite;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
-        }
+      .cricket-ball {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(
+        43deg,
+        #1b1931 0%,
+        #44174e 25%,
+        #662249 49.9%,  
+        #d4a017 50%,   
+        #f5e6a6 75%,
+        #f5e6a6 100%
+    );
+    border-radius: 50%;
+    position: relative;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+}
 
         .cricket-ball::before {
             content: "";
@@ -73,9 +82,9 @@ body{
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-             background: linear-gradient(270deg, #1a237e, #00897b, #fb8c00, #e53935);
+ background: linear-gradient(to right, #1b1931 1%,  #44174e 18%, #662249 40%,  #a34054 60%, #d4a017 82%,  #f5e6a6 100%);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+ /*animation: gradientBG 15s ease infinite;*/
         }
 .navbar {
     position: relative;
@@ -98,11 +107,12 @@ body{
     width:20vw;
 }
 .logo-text {
-    font-size: 38px;
+    font-size: 3vw;
  font-family: "Anton", sans-serif;
  font-weight: 700;
   font-style:italic;  
-    background: linear-gradient(to left,  #fb8c00 40%,#ffffff 100%);
+    background: linear-gradient(to left, #fb8c00 6%, #e53935 73%, #ffffff 70%);    
+    -webkit-background-clip: text;
   color: rgba(255, 255, 255, 0.7);
     background-clip: text;
     color: transparent;
@@ -160,8 +170,8 @@ color: #fb8c00;
 }
 
 .login-btn {
-  background: linear-gradient(to left,  #fb8c00, #e53935);
-    color: rgba(255, 255, 255, 0.7);
+background: radial-gradient(circle,  #a34054,#662249);
+    color: rgba(255, 255, 255);
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -171,7 +181,11 @@ color: #fb8c00;
 }
 
 .login-btn:hover {
-background: linear-gradient(to right,#1a237e, #00897b);
+background: linear-gradient(
+ to right,
+    #50044c,  
+    #6a0a5e     
+);
     transform: translateY(-2px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -186,7 +200,7 @@ background: linear-gradient(to right,#1a237e, #00897b);
     font-family: 'Anton', sans-serif;
     font-size: 3rem;
     margin-bottom: 40px;
-    letter-spacing: 2px;
+   /* letter-spacing: 2px;*/
     background: white;
     -webkit-background-clip: text;
     background-clip: text;
@@ -253,7 +267,7 @@ background: linear-gradient(to right,#1a237e, #00897b);
 }
 
 .moment-info h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     margin: 0;
     color: white;
@@ -284,6 +298,10 @@ background: linear-gradient(to right,#1a237e, #00897b);
 .play-button:hover {
     background: rgba(255, 255, 255, 0.9);
 }
+.play-button:hover::before {
+ border-color: transparent transparent transparent #000;
+}
+
 .play-button::before {
     content: "";
     position: absolute;
@@ -506,7 +524,9 @@ background: linear-gradient(to right,#1a237e, #00897b);
   }
   
   .logo-text {
-    font-size: 28px;
+           font-size: 28px;
+        background: linear-gradient(to left, #fb8c00 6%, #e53935 50%, #FFFFFD 47%);
+        -webkit-background-clip: text;
   }
   
   .nav-links {
